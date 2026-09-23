@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>القدس للفضة | Elquds Silver</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>القدس للفضيات والاكسسوارات | Elquds Silver</title>
+    <!-- استدعاء خط الرقعة والخطوط العربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -16,26 +17,58 @@
             background-color: #f8f9fa;
             color: #333;
         }
+        
         /* الهيدر العلوي */
         header {
             background-color: #121212;
             color: #fff;
-            padding: 25px 15px;
+            padding: 35px 15px 25px 15px;
             text-align: center;
             border-bottom: 3px solid #d4af37;
         }
-        header h1 {
-            font-size: 2.2em;
-            color: #f5f5f5;
+        
+        /* الكلمة الرئيسية بخط الرقعة */
+        .brand-title {
+            font-family: 'Aref Ruqaa', serif;
+            font-size: 3.8em;
+            color: #ffffff;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        header p {
+        
+        /* العبارة الفرعية وتحت الكلمة */
+        .brand-subtitle {
             color: #d4af37;
-            font-weight: bold;
-            font-size: 1.1em;
+            font-weight: 700;
+            font-size: 1.3em;
             margin-top: 5px;
+            letter-spacing: 0.5px;
         }
 
-        /* شريط الأقسام السريع (مثل ماركتشينو) */
+        /* شريط الجملة الترحيبية والرسالة الخاصة */
+        .promo-banner {
+            background: linear-gradient(135deg, #1f1f24, #2a2a32);
+            color: #f5f5f5;
+            text-align: center;
+            padding: 20px 15px;
+            border-bottom: 1px solid #333;
+        }
+        .promo-text {
+            font-size: 1.15em;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #e0e0e0;
+        }
+        .highlight-text {
+            color: #d4af37;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+            font-size: 1.2em;
+        }
+
+        /* شريط الأقسام السريع */
         .categories-bar {
             display: flex;
             justify-content: center;
@@ -140,34 +173,42 @@
 </head>
 <body>
 
+    <!-- الهيدر والاسم بخط الرقعة -->
     <header>
-        <h1>القدس للفضة</h1>
-        <p>بصُنــــع السعــــادة</p>
+        <div class="brand-title">القدس</div>
+        <div class="brand-subtitle">للفضيات والاكسسوارات</div>
     </header>
+
+    <!-- شريط الجملة الترحيبية المخصصة -->
+    <div class="promo-banner">
+        <p class="promo-text">
+            فكرتك هنحولهالك لقطعه تفضل معاك ف كل وقت..
+            <span class="highlight-text">انت تحلم واحنا ننفذ ✨</span>
+        </p>
+    </div>
 
     <!-- شريط الأقسام السريع -->
     <div class="categories-bar">
         <a href="#" class="category-btn active">الكل</a>
-        <a href="#" class="category-btn">سلاسل</a>
-        <a href="#" class="category-btn">خواتم</a>
+        <a href="#" class="category-btn">سلاسل تصاميم خاصة</a>
+        <a href="#" class="category-btn">خواتم فضة 925</a>
         <a href="#" class="category-btn">أساور وانسيالات</a>
         <a href="#" class="category-btn">سبح أحجار كريمة</a>
     </div>
 
     <div class="container">
-        <h2 class="section-title">أحدث التشكيلات</h2>
+        <h2 class="section-title">أحدث التشكيلات والتصاميم</h2>
 
         <!-- قائمة المنتجات -->
         <div class="products-grid">
 
             <!-- منتج 1 -->
             <div class="product-card">
-                <img src="https://via.placeholder.com/300x300?text=سلسلة+فضة+925" alt="سلسلة فضة" class="product-image">
+                <img src="https://via.placeholder.com/300x300?text=تصميم+خاص" alt="سلسلة تصميم خاص" class="product-image">
                 <div class="product-info">
-                    <div class="product-title">سلسلة فضة عيار 925 تصميم خاص</div>
-                    <div class="product-price">750 ج.م</div>
-                    <!-- استبدل الرقم برقم الواتساب الخاص بك -->
-                    <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20سلسلة%20فضة%20عيار%20925" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
+                    <div class="product-title">سلسلة تفصيل أسماء وتصاميم خاصة فضة 925</div>
+                    <div class="product-price">حسب التصميم</div>
+                    <a href="https://wa.me/201069985790?text=أرغب%20في%20تنفيذ%20تصميم%20خاص%20(فكرتك%20هنحولهالك%20لقطعة)" class="btn-order" target="_blank">اطبع فكرتك معنا 💬</a>
                 </div>
             </div>
 
@@ -175,9 +216,9 @@
             <div class="product-card">
                 <img src="https://via.placeholder.com/300x300?text=انسيال+فضة" alt="انسيال فضة" class="product-image">
                 <div class="product-info">
-                    <div class="product-title">انسيال فضة رجالي/حريمي عيار 925</div>
+                    <div class="product-title">انسيال فضة عيار 925 صياغة فاخرة</div>
                     <div class="product-price">600 ج.م</div>
-                    <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20انسيال%20فضة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
+                    <a href="https://wa.me/201069985790?text=أرغب%20في%20طلب%20انسيال%20فضة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
                 </div>
             </div>
 
@@ -185,9 +226,9 @@
             <div class="product-card">
                 <img src="https://via.placeholder.com/300x300?text=سبحة+أحجار+كريمة" alt="سبحة أحجار" class="product-image">
                 <div class="product-info">
-                    <div class="product-title">سبحة أحجار كريمة طبيعية مميزة</div>
+                    <div class="product-title">سبحة أحجار كريمة طبيعية بالفضة</div>
                     <div class="product-price">450 ج.م</div>
-                    <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20سبحة%20أحجار%20كريمة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
+                    <a href="https://wa.me/201069985790?text=أرغب%20في%20طلب%20سبحة%20أحجار%20كريمة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
                 </div>
             </div>
 
@@ -195,9 +236,9 @@
             <div class="product-card">
                 <img src="https://via.placeholder.com/300x300?text=خاتم+فضة" alt="خاتم فضة" class="product-image">
                 <div class="product-info">
-                    <div class="product-title">خاتم فضة أحجار كريمة صياغة يدوية</div>
+                    <div class="product-title">خاتم فضة أحجار كريمة حفر وتصميم يدوياً</div>
                     <div class="product-price">850 ج.م</div>
-                    <a href="https://wa.me/201000000000?text=أرغب%20في%20طلب%20خاتم%20فضة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
+                    <a href="https://wa.me/201069985790?text=أرغب%20في%20طلب%20خاتم%20فضة" class="btn-order" target="_blank">اطلب عبر الواتساب 💬</a>
                 </div>
             </div>
 
@@ -205,7 +246,7 @@
     </div>
 
     <footer>
-        © جميع الحقوق محفوظة - القدس للفضة
+        © جميع الحقوق محفوظة - القدس للفضيات والاكسسوارات
     </footer>
 
 </body>
